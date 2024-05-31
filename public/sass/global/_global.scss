@@ -154,6 +154,11 @@ font-family: 'Nunito', sans-serif;
     padding-left: 15px;
     position: relative;
 }
+.colorbox{
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
+}
 
 .ltn__no-gutter > [class*='col-'] { /* No padding only for child columns */
     padding-right: 0;
