@@ -28,7 +28,7 @@ function Home() {
     <div className="row navbar-transparent">
         <div className="col-2">
             <a href="index.html">
-                <img src="img/photos/lab final.png" style={{ width:'75%', marginBottom:'5px', marginTop:'0px', lineHeight:'10px', marginLeft:'-50%' }} alt="Logo"/>
+                <img src="img/photos/logofinal.png" style={{ width:'75%', marginBottom:'5px', marginTop:'0px', lineHeight:'10px', marginLeft:'-50%' }} alt="Logo"/>
             </a>
         </div>
         <div className="col" style={{ paddingTop:'0px' }}>
@@ -39,7 +39,7 @@ function Home() {
                     <li className=""><a style={{ fontSize:'17px',fontFamily:'inherit',fontWeight:'bold' }} href="/doctors">DOCTORS</a></li>
                     <li className=""><a style={{ fontSize:'17px',fontFamily:'inherit',fontWeight:'bold' }} href="#section1">EMERGENCY CONTACT</a></li>
                     <li><a style={{ fontSize:'17px',fontFamily:'inherit',fontWeight:'bold' }} href="/contact">CONTACT US</a></li>  
-                    <li><a href="/register" ><button style={{ marginLeft:'140%',fontSize:'15px',fontWeight:'600', padding: '5px 7px', backgroundColor: '#40bf80', color: 'black', border: 'none', borderRadius: '1px' }}  >Get Started</button></a></li>
+                    <li><a href="/register" ><button style={{ marginLeft:'140%',fontSize:'14px',fontFamily:'inherit',fontWeight:'600', padding: '5px 7px', backgroundColor: '#40bf80', color: 'black', border: 'none', borderRadius: '1px' }}  >GET STARTED</button></a></li>
                     {/* <li><a style={{ fontSize:'20px' }} href="/userlogin">Login</a></li>  */}
                    
                         <div style={{ marginLeft:'50%',marginTop:'13px' }} className="ltn__drop-menu user-menu">

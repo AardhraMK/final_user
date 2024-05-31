@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './lab final.png';
+import logofinal from './logofinal.png';
 
 function Footer(){
     return(
@@ -12,7 +12,7 @@ function Footer(){
                         <div class="footer-widget footer-about-widget">
                             <div  class="footer-logo">
                             <div style={{marginTop:'2px',paddingBottom:'20px'}} class="site-logo">
-                            <img style={{width:'50%',marginTop:'2px'}} src={logo} alt="Logo"/>
+                            <img style={{width:'50%',marginTop:'2px'}} src={logofinal} alt="Logo"/>
                                 </div>
                             </div>
                             <p style={{marginTop:'4px',}}>
