@@ -1,43 +1,102 @@
-.navbar-transparent {
-  background-color: transparent;
+/* @media only screen and (min-width: 1200px) {
+  .ltn__header-areas {
+    height: 60px;
+  }
+  .nav-links {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ltn__header-areas {
+    height: 50px;
+  }
+  .nav-links {
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .ltn__header-areas {
+    height: 40px;
+  }
+  .nav-links {
+    margin-left: 2%;
+  }
+  .mobile-header-menu-fullwidth {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .ltn__header-areas {
+    height: 30px;
+  }
+  .nav-links {
+    margin-left: 1%;
+  }
+} */
+/* Header.css */
+
+/* Add responsive styles here */
+@media screen and (max-width: 991px) {
+  /* Adjust the logo size */
+  .ltn__header-middle-area .col-2 {
+    width: auto;
+  }
+  .ltn__header-middle-area .col-2 img {
+    width: 100%;
+    max-width: 150px; /* Adjust the maximum width as needed */
+  }
+
+  /* Adjust the main menu */
+  .ltn__main-menu ul {
+    width: auto;
+  }
+  .ltn__main-menu ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .ltn__main-menu ul li a {
+    display: block;
+    padding: 10px;
+  }
+  .ltn__main-menu ul li:last-child {
+    margin-bottom: 0;
+  }
+  .ltn__main-menu ul li button {
+    margin-left: 0;
+    width: 100%;
+  }
+  .ltn__main-menu ul .ltn__drop-menu {
+    margin-left: 0;
+  }
+
+  /* Hide the desktop menu */
+  .ltn__main-menu {
+    display: none;
+  }
+
+  /* Show the mobile menu */
+  .mobile-header-menu-fullwidth {
+    display: block;
+  }
+}
+.mini-cart-icon {
+  position: relative;
+  /* display: inline-block; */
+}
+.notification-badge {
   position: absolute;
-  width: 100%;
-  z-index: 10;
+  top: -10px;
+  right: -6px;
+  background-color: green;
+  color: white;
+  border-radius: 60%;
+  width: 20px;
+  height: 20px;
+  padding: 1px 8px;
+  font-size: 10px;
+  line-height: 17px;
 }
-
-.navbar-transparent .ltn__main-menu ul {
-  background: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Semi-transparent background for better readability */
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.navbar-transparent .ltn__main-menu ul li a {
-  color: #fff; /* Adjust the color for better contrast */
-}
-
-.navbar-transparent .ltn__drop-menu.user-menu ul {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.navbar-transparent .ltn__drop-menu.user-menu ul li a {
-  color: #fff;
-}
-
-.get-started-button {
-  background-color: #007bff; /* Button background color */
-  color: white; /* Button text color */
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 20px;
-  margin-left: 10px;
-}
-
-.get-started-button:hover {
-  background-color: #0056b3; /* Button hover background color */
-}
+/* Add more media queries for smaller screen sizes if needed */

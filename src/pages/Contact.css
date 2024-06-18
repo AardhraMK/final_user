@@ -1,0 +1,9 @@
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+.container h2,
+.container h5,
+.container p {
+  animation: fadeIn 2s ease-in;
+}

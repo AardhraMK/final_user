@@ -5117,6 +5117,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__header-area {
   z-index: 9999;
   position: relative;
+  height: 105px;
+}
+
+.ltn__header-areas {
+  z-index: 9999;
+  position: relative;
+  height: 40px;
 }
 
 /* ----------------------------------------------
@@ -5203,17 +5210,34 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   z-index: 999;
 }
 
+.ltn__header-middle-areas {
+  z-index: 999;
+  max-height: 1px;
+}
+
 .ltn__header-middle-area > .container-fluid > .row,
 .ltn__header-middle-area > .container > .row {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+
   -webkit-box-align: center;
+  background-color: rgb(255, 255, 255);
   -ms-flex-align: center;
   align-items: center;
   position: relative;
 }
-
+.ltn__header-middle-areas > .container-fluid > .row,
+.ltn__header-middle-areas > .container > .row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  background-color: (10, 154, 115);
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  height: 50px;
+}
 .ltn__header-middle-area > .container-fluid > .row > .col,
 .ltn__header-middle-area > .container > .row > .col {
   -webkit-box-flex: 0;
@@ -5221,7 +5245,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   flex-grow: 1;
   position: static;
 }
-
+.ltn__header-middle-areas > .container-fluid > .row > .col,
+.ltn__header-middle-areas > .container > .row > .col {
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 1;
+  position: static;
+  max-height: 1px;
+}
 .site-logo {
   min-width: 185px;
   height: 100%;
@@ -6379,9 +6410,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   Header 3
 ---------------------------------------- */
 .ltn__header-3 .ltn__header-middle-area {
-  padding: 20px 0;
+  padding: 0 0;
 }
 
+.ltn__header-3 .ltn__header-middle-areas {
+  padding: 1px 0;
+  max-height: 10px;
+}
 .ltn__header-3 .header-bottom-area.sticky-active {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -7776,7 +7811,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   border: 1px solid var(--border-color-1);
   text-align: center;
   font-size: 20px;
-  color:white;
+  color: white;
   z-index: 1;
   opacity: 0;
   visibility: hidden;
@@ -8794,7 +8829,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   position: relative;
   -webkit-transition: all 3.5s ease 0s;
   -o-transition: all 3.5s ease 0s;
-  transition: all 3.5s ease 0s;
+  transition: transform 0.3s ease 0s;
 }
 
 .product-img:before {
@@ -18201,6 +18236,20 @@ input.cart-plus-minus-box {
   }
 }
 
+.product-img img {
+  transition: transform 0.3s ease;
+}
+
+.zoomable:hover img {
+  transform: scale(1.1);
+}
+.zoom-in-effect {
+  transition: transform 0.3s ease;
+}
+
+.zoom-in-effect:hover {
+  transform: scale(1.1);
+}
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */

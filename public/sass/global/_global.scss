@@ -422,7 +422,7 @@ p {
 }
 a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none !important;
     color: var(--ltn__paragraph-color);
     transition: all 0.3s ease 0s;
 }
