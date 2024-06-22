@@ -1,17 +1,62 @@
 import React, { useState } from "react";
 import { Form, Col, Row, Button } from "react-bootstrap";
 import labmain5 from "./labmain5.webp";
-import labmain6edit from './labmain6.webp';
+import labmain6edit from "./labmain6.webp";
+import { faCity } from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
 function Register() {
   const [image, setImage] = useState(null);
 
+  const [formData, setFormData] = useState({
+    name: "",
+    contact: "",
+    email: "",
+    profile_pic: null,
+    address: "",
+    city: "",
+    state: "",
+    pincode: "",
+  });
+
   const handleImageChange = (e) => {
-    setImage(e.target.files[0]);
+    //setImage();
+
+    setFormData({...formData, profile_pic : e.target.files[0]})
   };
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleCheckboxChange = (event) => {
+    const { name, checked } = event.target;
+    setFormData({
+      ...formData,
+      [name]: checked,
+    });
+  };
+  
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    let updatedToJson = new FormData()
+
+    updatedToJson.append('profile_pic',formData.profile_pic)
+    updatedToJson.append('address',formData.address)
+    updatedToJson.append('city',formData.city)
+    updatedToJson.append('email',formData.email)
+    updatedToJson.append('pincode',formData.pincode)
+    updatedToJson.append('contact',formData.contact)
+    updatedToJson.append('state',formData.state)
+
+    axios.post('http://127.0.0.1:8000/customer/register/',updatedToJson).then((response)=>{console.log(response.data);})
     // Handle form submission, including image data
   };
 
@@ -23,10 +68,15 @@ function Register() {
         style={{ position: "relative", width: "100%", height: "100vh" }}
       >
         {/* Image */}
-        <img 
+        <img
           src={labmain6edit}
           alt="background"
-          style={{ width: "100%", height: "100%", objectFit: "cover",opacity:'0.4' }}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            opacity: "0.4",
+          }}
         />
 
         {/* Form Container */}
@@ -44,7 +94,7 @@ function Register() {
             height: "85%",
           }}
         >
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit} enctype="multipart/form-data">
             <h1
               className="text-center"
               style={{ fontFamily: "Helvetica", marginTop: "12px" }}
@@ -57,6 +107,8 @@ function Register() {
                   Name
                 </Form.Label>
                 <Form.Control
+                onChange={handleInputChange}
+                  name="name"
                   style={{ borderRadius: "8px" }}
                   placeholder="Enter name"
                 />
@@ -66,6 +118,8 @@ function Register() {
                   Email
                 </Form.Label>
                 <Form.Control
+                onChange={handleInputChange}
+                  name="email"
                   style={{ borderRadius: "8px" }}
                   placeholder="Enter email"
                 />
@@ -85,6 +139,8 @@ function Register() {
                   Phone
                 </Form.Label>
                 <Form.Control
+                  name="contact"
+                  onChange={handleInputChange}
                   type="tel"
                   placeholder="Enter phone number"
                   style={{ width: "70%", borderRadius: "8px" }}
@@ -97,6 +153,7 @@ function Register() {
                   Upload Image
                 </Form.Label>
                 <Form.Control
+                  name="profile_pic"
                   style={{ borderRadius: "8px" }}
                   type="file"
                   accept="image/*"
@@ -111,9 +168,11 @@ function Register() {
                   Address
                 </Form.Label>
                 <Form.Control
+                  name="address"
                   style={{ borderRadius: "8px" }}
                   type="text"
                   placeholder="Enter address"
+                  onChange={handleInputChange}
                 />
               </Form.Group>
             </Row>
@@ -124,8 +183,10 @@ function Register() {
                   City
                 </Form.Label>
                 <Form.Control
+                  name="city"
                   style={{ borderRadius: "8px" }}
-                  placeholder="Enter email"
+                  placeholder="Enter city"
+                  onChange={handleInputChange}
                 />
               </Form.Group>
 
@@ -134,8 +195,10 @@ function Register() {
                   State
                 </Form.Label>
                 <Form.Control
+                  name="state"
                   style={{ borderRadius: "8px" }}
-                  placeholder="Enter email"
+                  placeholder="Enter state"
+                  onChange={handleInputChange}
                 />
               </Form.Group>
 
@@ -144,8 +207,10 @@ function Register() {
                   PinCode
                 </Form.Label>
                 <Form.Control
+                  name="pincode"
                   style={{ borderRadius: "8px" }}
-                  placeholder="Enter email"
+                  placeholder="Enter pincode"
+                  onChange={handleInputChange}
                 />
               </Form.Group>
             </Row>

@@ -3,7 +3,6 @@ import { Container, Form, Button } from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import labmain6edit from './labmain6.webp';
-import micro from './micro.gif';
 import './Contact.css';
 
 const Contact = () => {

@@ -26,7 +26,14 @@ export default function Doctor() {
 
     <div>
     <h1 style={{ fontWeight: 'bold', textAlign: 'center', marginBottom: '5%', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>OUR DOCTORS</h1>
-    <p style={{ textAlign: 'justify', margin: '0 10%',fontSize:'17px',color:'black',fontFamily:'inherit',marginBottom:'5%',fontWeight:'bold' }}>
+    <p style={{ textAlign: 'justify', margin: '0 10%',fontSize:'17px',color:'black',fontFamily:'inherit',marginBottom:'5%',fontWeight:'bold',  
+      color:'black',
+      fontSize:'18px',
+      marginTop:'15px',
+      fontFamily:'inherit',
+      opacity: '0',
+      animation: 'fadeIn 2s forwards'
+    }}>
       At  DLABS, we take pride in our team of highly qualified and experienced doctors who are dedicated to providing exceptional healthcare services. Our doctors specialize in a wide range of medical fields, ensuring that you receive comprehensive and personalized care tailored to your specific needs. From general practitioners to specialists in cardiology, neurology, orthopedics, and more, our medical professionals are committed to staying at the forefront of medical advancements and technologies. They work collaboratively to diagnose, treat, and manage a variety of health conditions, ensuring that each patient receives the highest standard of care. Our doctors prioritize patient education and preventive care, empowering you to make informed decisions about your health. Whether you require routine check-ups, diagnostic tests, or specialized treatments, you can trust our team to provide compassionate and expert care every step of the way. Your health and well-being are our top priorities, and we strive to create a supportive and welcoming environment for all our patients.From general practitioners to specialists in cardiology, neurology, orthopedics, and more, our medical professionals are committed to staying at the forefront of medical advancements and technologies. They work collaboratively to diagnose, treat, and manage a variety of health conditions, ensuring that each patient receives the highest standard of care. Our doctors prioritize patient education and preventive care, empowering you to make informed decisions about your health. Whether you require routine check-ups, diagnostic tests, or specialized treatments, you can trust our team to provide compassionate and expert care every step of the way. Your health and well-being are our top priorities, and we strive to create a supportive and welcoming environment for all our patients.
     </p>
   </div>

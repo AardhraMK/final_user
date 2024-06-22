@@ -5,26 +5,43 @@ import Lottie from 'lottie-react';
 import Image from 'react-bootstrap/Image';
 import animation1 from './Animate1.json';
 import person from './person.svg';
-import loginback from './loginback.avif';
+// import loginback from './loginback.avif';
 import user2 from './user2.gif';
-import loginim from './loginim.jpg';
-import user3 from './user3.gif';
-import labmain1 from './labmain1.jpg';
+// import loginim from './loginim.jpg';
+// import user3 from './user3.gif';
+// import labmain1 from './labmain1.jpg';
 import loginlabb from "./loginlabb.webp";
-import loginlab from "./loginlab.jpg";
+// import loginlab from "./loginlab.jpg";
 import "./login.css";
+import axios from 'axios';
 
 export default function Login() {
   const [showModal, setShowModal] = useState(false); // State variable to manage modal visibility
+  const [number, setNumber] = useState("");
+  const [otp, setOtp] = useState({dig1 : "",dig2 : "", dig3 : "",dig4: ""});
 
   const handleRequestOTP = () => {
-    setShowModal(true); // Show the modal when Request OTP is clicked
+    // setShowModal(true); 
+    let a = axios.post('http://127.0.0.1:8000/customer/login/',{contact :number}).then((response)=>console.log(response))
+    setShowModal(true)
   };
 
   const handleCloseModal = () => {
     setShowModal(false); // Close the modal
   };
 
+  const handleOtpChange = (e)=>{
+    const {name,value} = e.target;
+    setOtp({...otp, [name] : value})
+    
+  }
+
+
+
+  const handelVerify=(e)=>{
+    e.preventDefault()
+    let a = axios.post('http://127.0.0.1:8000/customer/verify-otp/',{otp :otp}).then((response)=>console.log(response))
+  }
   return (
     <div style={{ marginRight: '2px',height:'700px' }}>
       <Container style={{ margin:'7%', paddingLeft: '20px' }}>
@@ -73,6 +90,7 @@ export default function Login() {
                         marginLeft: '40px',
                         marginRight: '50px',
                       }}
+                      onChange={(x)=>setNumber(x.target.value)}
                     />
                     <Button
                       variant='success'
@@ -144,12 +162,12 @@ export default function Login() {
   <h4 style={{ color: '#333' }}>Enter OTP</h4>
   <form action="#">
     <div className="input-field" style={{ margin: 'auto', maxWidth: '300px' }}>
-      <input type="number" style={{ width: '50px', marginRight: '5px', borderRadius: '5px', border: '1px solid #ccc', padding: '8px' }} />
-      <input type="number" disabled style={{ width: '50px', marginRight: '5px', borderRadius: '5px', border: '1px solid #ccc', padding: '8px' }} />
-      <input type="number" disabled style={{ width: '50px', marginRight: '5px', borderRadius: '5px', border: '1px solid #ccc', padding: '8px' }} />
-      <input type="number" disabled style={{ width: '50px', borderRadius: '5px', border: '1px solid #ccc', padding: '8px' }} />
+      <input type="number" name='dig1' onChange={handleOtpChange} style={{ width: '50px', marginRight: '5px', borderRadius: '5px', border: '1px solid #ccc', padding: '8px' }} />
+      <input type="number" name='dig2' onChange={handleOtpChange}  style={{ width: '50px', marginRight: '5px', borderRadius: '5px', border: '1px solid #ccc', padding: '8px' }} />
+      <input type="number" name='dig3' onChange={handleOtpChange}  style={{ width: '50px', marginRight: '5px', borderRadius: '5px', border: '1px solid #ccc', padding: '8px' }} />
+      <input type="number" name='dig4' onChange={handleOtpChange}  style={{ width: '50px', borderRadius: '5px', border: '1px solid #ccc', padding: '8px' }} />
       <br />
-      <button style={{ marginTop: '20px',marginBottom:'25px', backgroundColor: '#28a745', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: '5px', cursor: 'pointer',marginRight:'15px' }}>Verify OTP</button>
+      <button style={{ marginTop: '20px',marginBottom:'25px', backgroundColor: '#28a745', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: '5px', cursor: 'pointer',marginRight:'15px' }} onClick={handelVerify}>Verify OTP</button>
       <button style={{ marginTop: '20px',marginBottom:'25px', backgroundColor: 'grey', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: '5px', cursor: 'pointer' }}>Resend OTP</button>
     </div>
   </form>

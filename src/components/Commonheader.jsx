@@ -7,7 +7,7 @@ function Header() {
       <div className="ltn__header-middle-area">
         <div className="container-fluid ">
           <div className="row navbar-transparent">
-            <div className="col-2 mt-2  ">
+            <div className="col-2 mt-2  "style={{marginLeft:'3%'}}>
               <a href="index.html">
                 <img
                   src="img/photos/logofinal.png"
@@ -21,7 +21,7 @@ function Header() {
                 />
               </a>
             </div>
-            <div className="col" style={{ paddingTop: "0px" }}>
+            <div className="col" style={{ paddingLeft:'5%' }}>
               <div className="ltn__main-menu">
                 <ul style={{ width: "70%", marginTop: "15px" }}>
                   <li className="head1">

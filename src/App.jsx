@@ -16,6 +16,7 @@ import Emergency from './pages/Emergency.jsx';
 import Booknow from './pages/Booknow.jsx';
 import ViewAppointment from './pages/ViewAppointment.jsx';
 import Labdetails2 from './pages/Labdetails2.jsx';
+import Editprofile from './pages/Editprofile.jsx';
 function App() {
   return (
      <Router>
@@ -36,6 +37,7 @@ function App() {
         <Route path="/emergency" element={<><Header/><Header2/><Emergency/><Footer/></>} />
         <Route path="/booknow" element={<><Header/><Header2/><Booknow/><Footer/></>} />
         <Route path="/viewappointment" element={<ViewAppointment/>} />
+        <Route path="/editprofile" element={<><Editprofile/></>} />
       </Routes>
      
     </Router>

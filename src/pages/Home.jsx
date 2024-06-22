@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import micro from "./micro.gif";
+// import micro from "./micro.gif";
 import bokk2 from "./bokk2.gif";
 import chem from "./chem.jpg";
 import dna from "./dna.gif";
 import dna2 from "./dna2.avif";
 import carousel1 from "./carousel1.jpeg";
+import '../App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import postnatal2 from "./postnatal2.gif";
+// import postnatal2 from "./postnatal2.gif";
 import "./Myacc.css";
 function Home() {
   const [selectedOption, setSelectedOption] = useState("");
@@ -22,190 +23,13 @@ function Home() {
         className="ltn__slider-area ltn__slider-3  section-bg-1"
         id="section3"
       >
-        {/* <header  className="ltn__header-area ltn__header-3 section-bg-6---">   
-            
-            <div className="ltn__header-middle-area">
-            <div className="container">
-    <div className="row navbar-transparent">
-        <div className="col-2">
-            <a href="index.html">
-                <img src="img/photos/logofinal.png" style={{ width:'75%', marginBottom:'5px', marginTop:'0px', lineHeight:'10px', marginLeft:'-50%' }} alt="Logo"/>
-            </a>
-        </div>
-        <div className="col" style={{ paddingTop:'0px' }}>
-            <div className="ltn__main-menu">
-                <ul style={{ width:'30%', marginTop:'15px' }}>
-                    <li className=""><a style={{ fontSize:'17px',fontFamily:'inherit',fontWeight:'bold' }} href="/">HOME</a></li>
-                    <li className=""><a style={{ fontSize:'17px',fontFamily:'inherit',fontWeight:'bold' }} href="/lab">LABS</a></li>
-                    <li className=""><a style={{ fontSize:'17px',fontFamily:'inherit',fontWeight:'bold' }} href="/doctors">DOCTORS</a></li>
-                    <li className=""><a style={{ fontSize:'17px',fontFamily:'inherit',fontWeight:'bold' }} href="#section1">EMERGENCY CONTACT</a></li>
-                    <li><a style={{ fontSize:'17px',fontFamily:'inherit',fontWeight:'bold' }} href="/contact">CONTACT US</a></li>  
-                    <li><a href="/register" ><button style={{ marginLeft:'140%',fontSize:'14px',fontFamily:'inherit',fontWeight:'600', padding: '5px 7px', backgroundColor: '#40bf80', color: 'black', border: 'none', borderRadius: '1px' }}  >GET STARTED</button></a></li> */}
-        {/* <li><a style={{ fontSize:'20px' }} href="/userlogin">Login</a></li>  */}
-        {/*                    
-                        <div style={{ marginLeft:'50%',marginTop:'13px' }} className="ltn__drop-menu user-menu">
-                            <ul>
-                                <li>
-                                    <a href="#" style={{ width:'100%' }}><i className="icon-user"></i></a>
-                                    <ul> */}
-        {/* <li><a href="/register">Register</a></li> */}
-        {/* <li><a href="/userlogin">Login</a></li>
-                                        <li><a href="/myaccount">My Account</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                   
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-</div> */}
-
-
-        {/* <!-- ltn__header-middle-area end --> */}
-
-        {/* <!-- MOBILE MENU START --> */}
-        {/* <div className="mobile-header-menu-fullwidth mb-20 d-block d-lg-none">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12"> */}
-        {/* <!-- Mobile Menu Button --> */}
-        {/* <div className="mobile-menu-toggle d-lg-none">
-                                <span>MENU</span>
-                                <a href="#ltn__utilize-mobile-menu" className="ltn__utilize-toggle">
-                                    <svg viewBox="0 0 800 600">
-                                        <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
-                                        <path d="M300,320 L540,320" id="middle"></path>
-                                        <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-        {/* <!-- MOBILE MENU END --> */}
-
-        {/* <!-- header-bottom-area start --> */}
-        {/* <div  >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3 align-self-center">
-                        
-                        </div> */}
-        {/* <div className="col-lg-7" style={{marginRight:'0%'}}>
-                            <div >
-                                <div className="header-menu header-menu-2 text-start">
-                                    <nav>
-                                        <div className="ltn__main-menu">
-                                            <ul>
-                                                <li className=""><a href="/">Home</a>
-                                                    
-                                                </li>
-                                                <li className=""><a href="/lab">Labs</a>
-                                                    
-                                                </li>
-                                                <li className=""><a href="/doctors">Doctors</a>
-                                                    
-                                                </li>
-                                                <li className=""><a href="#section1">Emergency Contact</a>
-                                                </li>
-                                                
-                                                <li><a href="/contact">Contact Us</a></li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div> */}
-
-        {/* </div> */}
-        {/* <div className="col-lg-2 align-self-center d-none d-xl-block">
-                            <div className="header-contact-info text-end">
-                            <div className="ltn__social-media">
-                                <ul>
-                                    <li><a href="#" title="Facebook"><i className="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" title="Twitter"><i className="fab fa-twitter"></i></a></li>
-                                    
-                                    <li><a href="#" title="Instagram"><i className="fab fa-instagram"></i></a></li>
-                                    <li><a href="#" title="Whatsapp"><i className="fab fa-whatsapp"></i></a></li>
-                                </ul>
-                            </div> 
-                            </div>
-                        </div> */}
-        {/* </div>
-                </div>
-            </div> */}
-        {/* <!-- header-bottom-area end --> */}
-
        
-        {/* <div id="ltn__utilize-cart-menu" class="ltn__utilize ltn__utilize-cart-menu">
-            <div class="ltn__utilize-menu-inner ltn__scrollbar">
-                <div class="ltn__utilize-menu-head">
-                    <span class="ltn__utilize-menu-title">Cart</span>
-                    <button class="ltn__utilize-close">×</button>
-                </div>
-                <div class="mini-cart-product-area ltn__scrollbar">
-                    <div class="mini-cart-item clearfix">
-                        <div class="mini-cart-img">
-                            <a href="#"><img src="img/product/1.png" alt="Image"/></a>
-                            <span class="mini-cart-item-delete"><i class="icon-cancel"></i></span>
-                        </div>
-                        <div class="mini-cart-info">
-                            <h6><a href="#"> OptiGen Labs</a></h6>
-                            <span class="mini-cart-quantity">1 x $65.00</span>
-                        </div>
-                    </div>
-                    <div class="mini-cart-item clearfix">
-                        <div class="mini-cart-img">
-                            <a href="#"><img src="img/product/2.png" alt="Image"/></a>
-                            <span class="mini-cart-item-delete"><i class="icon-cancel"></i></span>
-                        </div>
-                        <div class="mini-cart-info">
-                            <h6><a href="#">Hyatt Labs</a></h6>
-                            <span class="mini-cart-quantity">1 x $85.00</span>
-                        </div>
-                    </div>
-                    <div class="mini-cart-item clearfix">
-                        <div class="mini-cart-img">
-                            <a href="#"><img src="img/product/3.png" alt="Image"/></a>
-                            <span class="mini-cart-item-delete"><i class="icon-cancel"></i></span>
-                        </div>
-                        <div class="mini-cart-info">
-                            <h6><a href="#">Cosmetic Containers</a></h6>
-                            <span class="mini-cart-quantity">1 x $92.00</span>
-                        </div>
-                    </div>
-                    <div class="mini-cart-item clearfix">
-                        <div class="mini-cart-img">
-                            <a href="#"><img src="img/product/4.png" alt="Image"/></a>
-                            <span class="mini-cart-item-delete"><i class="icon-cancel"></i></span>
-                        </div>
-                        <div class="mini-cart-info">
-                            <h6><a href="#">Thermometer Gun</a></h6>
-                            <span class="mini-cart-quantity">1 x $68.00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="mini-cart-footer">
-                    <div class="btn-wrapper">
-                        <a style={{width:'100%'}} href="cart.html" class="theme-btn-1 btn btn-effect-1">View More</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    
-        <div className="ltn__utilize-overlay"></div>    
-        </header> */}
         <div
           style={{ backgroundColor: "white" }}
           className="ltn__slide-one-active slick-slide-arrow-1 slick-slide-dots-1"
         >
           {/* <!-- ltn__slide-item --> */}
-          <div
+          <div 
             className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-3-normal--- ltn__slide-item-3 bg-image bg-overlay-theme-black-60---"
             data-bs-bg="img/photos/labmain7.webp"
           >
@@ -226,14 +50,14 @@ function Home() {
                         </div>
                         {/* <h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-syringe"></i></span> Certified Laboratories and Facilities</h6> */}
                         <h1
-                          style={{ color: "#0A9A73",fontFamily:'inherit' }}
+                          style={{ color: "#0A9A73",fontFamily:'inherit', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
                           className="slide-title animated "
                         >
                           {" "}
                           Leading the way in Laboratory Technology
                         </h1>
                         <div className="slide-brief animated">
-                          <p style={{ color: "#0A9A73",fontFamily:'inherit' }}>
+                          <p style={{ color: "#0A9A73",fontFamily:'inherit', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
                             Every diagnosis, every treatment,crafted with
                             expertise and empathy
                           </p>
@@ -270,7 +94,7 @@ function Home() {
                         </div>
                         {/* <h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-syringe"></i></span> Certified Laboratories and Facilities</h6> */}
                         <h1
-                          style={{ color: "teal" }}
+                          style={{ color: "#0A9A73",fontFamily:'inherit', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
                           className="slide-title animated "
                         >
                           {" "}
@@ -278,7 +102,7 @@ function Home() {
                           and Facilities{" "}
                         </h1>
                         <div className="slide-brief animated">
-                          <p style={{ color: "darkslategrey" }}>
+                          <p style={{ color: "#0A9A73",fontFamily:'inherit', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
                             Every diagnosis, every treatment,crafted with
                             expertise and empathy
                           </p>
@@ -315,7 +139,7 @@ function Home() {
                         </div>
                         {/* <h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-syringe"></i></span> Certified Laboratories and Facilities</h6> */}
                         <h1
-                          style={{ color: "teal" }}
+                          style={{ color: "white",fontFamily:'inherit', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
                           className="slide-title animated "
                         >
                           {" "}
@@ -323,7 +147,7 @@ function Home() {
                           the best of Healthcare{" "}
                         </h1>
                         <div className="slide-brief animated">
-                          <p style={{ color: "darkslategrey" }}>
+                          <p style={{ color: "white",fontFamily:'inherit', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
                             Rewriting medical practices,one patient at a time
                           </p>
                         </div>
@@ -349,7 +173,7 @@ function Home() {
             <div className="col-lg-12">
               <div className="section-title-area ltn__section-title-2 text-center">
                 <h1
-                  style={{ fontSize: "40px", color: "black",fontFamily:'inherit',marginTop:'2%' }}
+                  style={{ fontSize: "40px", color: "black",fontFamily:'inherit', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
                   className="section-title"
                 >
                   LABS NEAR YOU
@@ -357,14 +181,22 @@ function Home() {
                 </h1>
                 {/* <!-- SEARCH AREA BEGIN --> */}
 
-       <div className="header-search-2" style={{maxwidth: '55%',marginLeft:'31%',marginTop:'5%',marginRight:'50%'}}>
-                                <form id="#123" method="get"  action="#" >
-                                    <input type="text" name="search" value="" placeholder="Search here..."/>
-                                    <button type="submit">
-                                        <span><i className="icon-search"></i></span>
-                                    </button>
-                                </form>
-                            </div> 
+                <div
+      className="header-search-2"
+      style={{
+        maxWidth: '55%',
+        marginLeft: '22.5%',
+        marginTop: '5%',
+        marginRight: '22.5%',
+      }}
+    >
+      <form id="#123" method="get" action="#">
+        <input type="text" name="search" placeholder="Search here..." />
+        <button type="submit">
+          <span><i className="icon-search"></i></span>
+        </button>
+      </form>
+    </div>
 
       {/* <!-- SEARCH AREA END --> */}
                 
@@ -616,7 +448,7 @@ function Home() {
           <div class="row">
             <div class="col-lg-12">
               <div class="section-title-area ltn__section-title-2--- text-center">
-                <h1 style={{ color: "black" }} class="section-title">
+                <h1 style={{ color: "black", textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',marginBottom:'5%' }} class="section-title">
                   POPULAR PACKAGES
                 </h1>
               </div>
@@ -679,7 +511,7 @@ function Home() {
                     <img src="img/photos/men2.jpg" alt="#" />
                   </a>
                 </div>
-                <div class="ltn__blog-brief" style={{ height: "240px" }}>
+                <div class="ltn__blog-brief" style={{ height: "245px" }}>
                   <div class="ltn__blog-meta">
                     <ul>
                       <li class="ltn__blog-author">
@@ -696,7 +528,7 @@ function Home() {
                   </div>
                   <h3 class="ltn__blog-title">
                     <a href="blog-details.html">
-                      Men's Master Checkup with Arthritis and Cancer Screening
+                      Men's Master Checkup with Arthritis and Cancer Screening with Follow Ups
                     </a>
                   </h3>
                   <div class="ltn__blog-meta-btn">
@@ -819,7 +651,7 @@ function Home() {
               <div class="ltn__blog-item ltn__blog-item-3">
                 <div class="ltn__blog-img">
                   <a href="blog-details.html">
-                    <img src="img/photos/fitness.jpg" alt="#" />
+                    <img src="img/photos/running.webp" alt="#" />
                   </a>
                 </div>
                 <div class="ltn__blog-brief" style={{ height: "240px" }}>
@@ -832,14 +664,14 @@ function Home() {
                       </li>
                       <li class="ltn__blog-tags">
                         <a href="#">
-                          <i class="fas fa-tags"></i>102 tests included
+                          <i class="fas fa-tags"></i>67 tests included
                         </a>
                       </li>
                     </ul>
                   </div>
                   <h3 class="ltn__blog-title">
                     <a href="blog-details.html">
-                      360 Full Body Fitness Assessment with Follow-Up Sessions
+                      360 Full Body Fitness and Wellbeing check(Men and Women){" "}
                     </a>
                   </h3>
                   <div class="ltn__blog-meta-btn">
@@ -850,7 +682,7 @@ function Home() {
                             class="fas fa-rupee-sign"
                             style={{ color: "green" }}
                           ></i>
-                          2499
+                          1499
                         </li>
                       </ul>
                     </div>
@@ -868,12 +700,12 @@ function Home() {
       {/* <!-- PACKAGE AREA END -->  #############################################   PACKAGES  ###################### */}
 
       {/* <!-- DOCTOR AREA START (product-item-3) --> */}
-      <div class="ltn__product-area ltn__product-gutter  no-product-ratting pt-115 pb-70---">
+      <div class="ltn__product-area ltn__product-gutter  no-product-ratting pt-115 pb-70---"style={{padding:'25px'}}>
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
               <div  class="section-title-area ltn__section-title-2--- text-center">
-                <h1 class="section-title" style={{ color: "black" }}>
+                <h1 class="section-title " style={{ color: "black", textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
                   OUR EXPERIENCED DOCTORS
                 </h1>
               </div>
@@ -891,35 +723,6 @@ function Home() {
                   <div class="product-hover-action"></div>
                 </div>
                 <div class="product-info">
-                  <div class="product-ratting">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star-half-alt"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="far fa-star"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
                   <h3 style={{ fontWeight: "bold" }} class="ltn__blog-title">
                     <a  href="blog-details.html">
                       Dr.Nived C.K
@@ -958,35 +761,7 @@ function Home() {
                   <div class="product-hover-action"></div>
                 </div>
                 <div class="product-info">
-                  <div class="product-ratting">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star-half-alt"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="far fa-star"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                 
                   <h3
                     style={{ fontWeight: "bold" }}
                     class="ltn__blog-title"
@@ -1028,35 +803,7 @@ function Home() {
                   <div class="product-hover-action"></div>
                 </div>
                 <div class="product-info">
-                  <div class="product-ratting">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star-half-alt"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="far fa-star"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                 
                   <h3 style={{ fontWeight: "bold" }} class="ltn__blog-title">
                     <a  href="blog-details.html">
                       Dr.Anna Davis
@@ -1095,35 +842,7 @@ function Home() {
                   <div class="product-hover-action"></div>
                 </div>
                 <div class="product-info">
-                  <div class="product-ratting">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star-half-alt"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="far fa-star"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                 
                   <h3 style={{ fontWeight: "bold" }} class="ltn__blog-title">
                     <a  href="blog-details.html">
                       Dr.Rajesh M
@@ -1163,35 +882,7 @@ function Home() {
                   <div class="product-hover-action"></div>
                 </div>
                 <div class="product-info">
-                  <div class="product-ratting">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fas fa-star-half-alt"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="far fa-star"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                 
                   <h3 style={{ fontWeight: "bold" }} class="ltn__blog-title">
                     <a  href="blog-details.html">
                       Dr.Jeeva Raj
@@ -1231,14 +922,17 @@ function Home() {
           <div class="row">
             <div class="col-lg-12">
               <div class="section-title-area ltn__section-title-2 text-center">
-                <h1 class="section-title">AMBULANCE LIST</h1>
-                <div>
-                  <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Search for ambulances..."
-                  />
-                </div>
+                <h1 class="section-title"style={{fontFamily:'inherit'}}>AMBULANCE LIST</h1>
+                
+<div class="search-container">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search for ambulances..."
+    
+  />
+  <i class="fas fa-search search-icon"></i>
+</div>
               </div>
             </div>
           </div>
@@ -1248,7 +942,7 @@ function Home() {
               <div class="ltn__small-product-item">
                 <div class="small-product-item-info">
                   <h2 class="product-title">
-                    <a href="product-details.html">AlphaOne Ambulance</a>
+                    <a href="product-details.html"style={{color:'black',fontFamily:'inherit',fontWeight:'bold',fontSize:'20px'}}>AlphaOne Ambulance</a>
                   </h2>
                   <div class="product-price">
                     <span>Cantonment area,kannur</span>
@@ -1292,7 +986,7 @@ function Home() {
               <div class="ltn__small-product-item">
                 <div class="small-product-item-info">
                   <h2 class="product-title">
-                    <a href="product-details.html">Swift Services</a>
+                    <a href="product-details.html"style={{color:'black',fontFamily:'inherit',fontWeight:'bold',fontSize:'20px'}}>Swift Services</a>
                   </h2>
                   <div class="product-price">
                     <span>kannur Town</span>
@@ -1336,7 +1030,7 @@ function Home() {
               <div class="ltn__small-product-item">
                 <div class="small-product-item-info">
                   <h2 class="product-title">
-                    <a href="product-details.html">
+                    <a href="product-details.html"style={{color:'black',fontFamily:'inherit',fontWeight:'bold',fontSize:'20px'}}>
                       Vigilante Paramedic Service
                     </a>
                   </h2>
@@ -1382,7 +1076,7 @@ function Home() {
               <div class="ltn__small-product-item">
                 <div class="small-product-item-info">
                   <h2 class="product-title">
-                    <a href="product-details.html">Xavier Paramedic Service</a>
+                    <a href="product-details.html"style={{color:'black',fontFamily:'inherit',fontWeight:'bold',fontSize:'20px'}}>Xavier Paramedic Service</a>
                   </h2>
                   <div class="product-price">
                     <span>Pallikkunnu,kannur</span>
@@ -1426,7 +1120,7 @@ function Home() {
               <div class="ltn__small-product-item">
                 <div class="small-product-item-info">
                   <h2 class="product-title">
-                    <a href="product-details.html"></a>Maya Emergency Transports
+                    <a href="product-details.html"style={{color:'black',fontFamily:'inherit',fontWeight:'bold',fontSize:'20px'}}>Maya Emergency Transports</a>
                   </h2>
                   <div class="product-price">
                     <span>Thalap, kannur</span>
@@ -1470,7 +1164,7 @@ function Home() {
               <div class="ltn__small-product-item">
                 <div class="small-product-item-info">
                   <h2 class="product-title">
-                    <a href="product-details.html">Neon Emergency Services</a>
+                    <a href="product-details.html"style={{color:'black',fontFamily:'inherit',fontWeight:'bold',fontSize:'20px'}}>Neon Emergency Services</a>
                   </h2>
                   <div class="product-price">
                     <span>Thavakkara,kannur</span>
@@ -1514,7 +1208,7 @@ function Home() {
               <div class="ltn__small-product-item">
                 <div class="small-product-item-info">
                   <h2 class="product-title">
-                    <a href="product-details.html">Adele Ambulances</a>
+                    <a href="product-details.html"style={{color:'black',fontFamily:'inherit',fontWeight:'bold',fontSize:'20px'}}>Adele Ambulances</a>
                   </h2>
                   <div class="product-price">
                     <span>Thavakkara,kannur</span>
@@ -1558,7 +1252,7 @@ function Home() {
               <div class="ltn__small-product-item">
                 <div class="small-product-item-info">
                   <h2 class="product-title">
-                    <a href="product-details.html">MayFair Ambulances</a>
+                    <a href="product-details.html"style={{color:'black',fontFamily:'inherit',fontWeight:'bold',fontSize:'20px'}}>MayFair Ambulances</a>
                   </h2>
                   <div class="product-price">
                     <span>Cantonment area,kannur</span>
@@ -1602,7 +1296,7 @@ function Home() {
               <div class="ltn__small-product-item">
                 <div class="small-product-item-info">
                   <h2 class="product-title">
-                    <a href="product-details.html">Zoya Ambulance</a>
+                    <a href="product-details.html"style={{color:'black',fontFamily:'inherit',fontWeight:'bold',fontSize:'20px'}}>Zoya Ambulance</a>
                   </h2>
                   <div class="product-price">
                     <span>Thalap,kannur</span>

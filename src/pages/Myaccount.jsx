@@ -74,7 +74,7 @@ const MyAccount = () => {
                     </div>
                   ))}
                   <div style={{marginRight:'23%'}} className="w-50 mt-4  text-center align-items-center">
-  <a href="/register" style={{marginRight:'10%'}}>
+  <a href="/editprofile" style={{marginRight:'10%'}}>
     <Button variant="success" className="mr-1 w-55">
       Edit Profile
     </Button>

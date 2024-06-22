@@ -4,14 +4,15 @@
   height: 100vh;
   overflow: hidden;
   text-align: center;
+  align-items: center;
 }
 
 .image {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 10%;
   object-fit: cover;
 }
 
@@ -23,12 +24,13 @@
 
 .card {
   width: 30%;
+  height: 40%;
   border: 1px solid #ccc;
   background-color: #f0f0f0;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin: 25px;
+  margin: 35px;
 }
 .card-content {
   display: flex;

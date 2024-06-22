@@ -6,13 +6,15 @@ import labmain6edit from './labmain6edit.png';
 import Carousel from 'react-bootstrap/Carousel';
 // import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import ExampleCarouselImage from './labmain5.webp';
 import ExampleCarouselImage1 from './labmain1.jpg';
 import ExampleCarouselImage2 from './rare.png';
 import l2 from './l2.webp';
 import l1 from  './l1.webp';
-import l3 from  './l3.jpg';
+import l3 from './l3.jpg';
 import l6 from  './l6.jpg';
 import l7 from  './l7.jpg';
 import l8 from  './l8.webp';
@@ -29,377 +31,262 @@ const Lab = () => {
   </div>
 </div>
 
-      <div style={{ marginTop: '15%', textAlign: 'center' }}>
+      <div style={{ marginTop: '5%', textAlign: 'center' }}>
    <h2 style={{ fontFamily: 'inherit', fontWeight: 'bold', fontSize: '50px', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>OUR BEST RATING LABS</h2>
 
     <p style={{fontFamily:'inherit',fontWeight:'bold',color:'white'}}>EXPLORE OUR STATE-OF-THE-ART LABORATORIES.</p>
   </div>
      
     
-    <div className="containers1 mt-5 mb-5" style={{ margin: "35px" }}>
-  <CRow className="g-3 mb-5 mr-5 mt-5">
-    <CCol md={4}>
-      <CCard className="mb-3 " style={{ overflow: 'hidden' }}>
-        <CCardImage className="zoom-in-effect"
-          src={l2} 
-          style={{
-            transition: 'transform 0.3s ease-in-out',
-            ':hover': {
-              transform: 'scale(1.1)'
-            }
-          }}
-        />
-        <CCardBody>
-          <CCardTitle 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '0.5s',
-              opacity: 0,
-              fontWeight:'bold',
-              marginTop:'3%',
-            }}
-          >
-            ORION LABS
-          </CCardTitle>
-          <CCardText 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '1s',
-              opacity: 0,
-              fontWeight:'bold'
-            }}
-          >
-           This can involve various diagnostic tests, such as imaging tests (e.g., X-rays, MRI, CT scans), blood tests, and biopsy procedures.
-          </CCardText>
-          <CCardText 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '1.5s',
-              opacity: 0,
-              fontWeight:'bold'
-            }}
-          >
-         <small className="text-body-secondary">KANNUR, KOODALI</small>
-      </CCardText>
-      <div style={{
-        animation: 'fadeInUp 1s forwards',
-        animationDelay: '2s',
-        opacity: 0,
-        marginTop: '10px',
-      
-      }}>
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-      </div>
-    </CCardBody>
-      </CCard>
-    </CCol>
-    <CCol md={4}>
-      <CCard className="mb-3" style={{ overflow: 'hidden' }}>
-        <CCardImage className="zoom-in-effect"
-          src={l1} 
-          style={{
-           
-            transition: 'transform 0.3s ease-in-out',
-            ':hover': {
-              transform: 'scale(1.1)'
-            }
-          }}
-        />
-        <CCardBody >
-          <CCardTitle 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '0.5s',
-              opacity: 0,
-               fontWeight:'bold',
-               marginTop:'3%',
-            }}
-          >
-            GENOTICS LABS
-          </CCardTitle>
-          <CCardText 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '1s',
-              opacity: 0,
-              fontWeight:'bold'
-            }}
-          >
-            This can involve various diagnostic tests, such as imaging tests (e.g., X-rays, MRI, CT scans), blood tests, and biopsy procedures.
-          </CCardText>
-          <CCardText 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '1.5s',
-              opacity: 0,
-              fontWeight:'bold',
-              
-            }}
-          >
-            <small className="text-body-secondary">KANNUR, KOODALI</small>
-      </CCardText>
-      <div style={{
-        animation: 'fadeInUp 1s forwards',
-        animationDelay: '2s',
-        opacity: 0,
-        marginTop: '10px'
-      }}>
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-      </div>
-    </CCardBody>
-      </CCard>
-    </CCol>
-    <CCol md={4}>
-      <CCard className="mb-3" style={{ overflow: 'hidden' }}>
-        <CCardImage className="zoom-in-effect"
-          src={l3} 
-          style={{
-            transition: 'transform 0.3s ease-in-out',
-            ':hover': {
-              transform: 'scale(1.1)'
-            }
-          }}
-        />
-        <CCardBody>
-          <CCardTitle 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '0.5s',
-              opacity: 0,
-              fontWeight:'bold',
-              marginTop:'3%',
-            }}
-          >
-           LEO LABS
-          </CCardTitle>
-          <CCardText 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '1s',
-              opacity: 0,
-              fontWeight:'bold'
-            }}
-          >
-            This can involve various diagnostic tests, such as imaging tests (e.g., X-rays, MRI, CT scans), blood tests, and biopsy procedures.
-          </CCardText>
-          <CCardText 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '1.5s',
-              opacity: 0,
-              fontWeight:'bold'
-            }}
-          >
-           <small className="text-body-secondary">KANNUR, KOODALI</small>
-      </CCardText>
-      <div style={{
-        animation: 'fadeInUp 1s forwards',
-        animationDelay: '2s',
-        opacity: 0,
-        marginTop: '10px'
-      }}>
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-      </div>
-    </CCardBody>
-      </CCard>
-    </CCol>
-  </CRow>
-  <CRow className="g-3 mb-5 mr-5 mt-5">
-    <CCol md={4}>
-    <CCard className="mb-3" style={{ overflow: 'hidden' }}>
-    <CCardImage className="zoom-in-effect"
-      src={l6} 
-      style={{
-        transition: 'transform 0.3s ease-in-out',
-        ':hover': {
-          transform: 'scale(1.1)'
-        }
-      }}
-    />
-    <CCardBody>
-      <CCardTitle 
-        style={{
-          animation: 'fadeInUp 1s forwards',
-          animationDelay: '0.5s',
-          opacity: 0,
-          fontWeight: 'bold',
-          marginTop:'3%',
-        }}
-      >
-        HYATT LABS
-      </CCardTitle>
-      <CCardText 
-        style={{
-          animation: 'fadeInUp 1s forwards',
-          animationDelay: '1s',
-          opacity: 0,
-          fontWeight: 'bold',
+    <div className="containers1  mb-5">
+ 
+    <div className="ltn__product-area ltn__product-gutter  no-product-ratting pt-115 pb-70---">
+        <div className="container">
           
-        }}
-      >
-        This can involve various diagnostic tests, such as imaging tests (e.g., X-rays, MRI, CT scans), blood tests, and biopsy procedures.
-      </CCardText>
-      <CCardText 
-        style={{
-          animation: 'fadeInUp 1s forwards',
-          animationDelay: '1.5s',
-          opacity: 0,
-          fontWeight: 'bold'
-        }}
-      >
-        <small className="text-body-secondary">KANNUR, KOODALI</small>
-      </CCardText>
-      <div style={{
-        animation: 'fadeInUp 1s forwards',
-        animationDelay: '2s',
-        opacity: 0,
-        marginTop: '10px'
-      }}>
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
+          
+          <div className="row ltn__tab-product-slider-one-active--- slick-arrow-1">
+            {/* <!-- ltn__product-item --> */}
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+    <div style={{ backgroundColor: 'white' }} className="ltn__product-item ltn__product-item-3 text-center">
+        <div className="product-img">
+            <a href="/Lab_details" className="zoomable">
+                <img src="img/photos/l1.webp" alt="#" />
+            </a>
+            <div className="product-hover-action">
+                {/* Add your hover action buttons here */}
+            </div>
+        </div>
+        <div className="product-info">
+            <div className="product-ratting">
+               
+            </div>
+            <h2 className="product-title">
+                <a href="product-details.html">GENOTICS LABS</a>
+            </h2>
+            <div className="product-price">
+                <span>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: "8px" }} />
+                    <a> Caltex,Kannur</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+            {/* <!-- ltn__product-item --> */}
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+    <div style={{ backgroundColor: 'white' }} className="ltn__product-item ltn__product-item-3 text-center">
+        <div className="product-img">
+            <a href="/Labdetails2" className="zoomable">
+                <img src="img/photos/l2.webp" alt="#" />
+            </a>
+            <div className="product-hover-action">
+                {/* Add your hover action buttons here */}
+            </div>
+        </div>
+        <div className="product-info">
+            <div className="product-ratting">
+               
+            </div>
+            <h2 className="product-title">
+                <a href="product-details.html">ORION LABS</a>
+            </h2>
+            <div className="product-price">
+                <span>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: "8px" }} />
+                    <a> Thana,Kannur</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+            {/* <!-- ltn__product-item --> */}
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+    <div style={{ backgroundColor: 'white' }} className="ltn__product-item ltn__product-item-3 text-center">
+        <div className="product-img">
+            <a href="/Lab_details" className="zoomable">
+                <img src="img/photos/l3.jpg" alt="#" />
+            </a>
+            <div className="product-hover-action">
+                {/* Add your hover action buttons here */}
+            </div>
+        </div>
+        <div className="product-info">
+            <div className="product-ratting">
+               
+            </div>
+            <h2 className="product-title">
+                <a href="product-details.html">LEO LABS</a>
+            </h2>
+            <div className="product-price">
+                <span>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: "8px" }} />
+                    <a> Kannur, koodali</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+            {/* <!-- ltn__product-item --> */}
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+    <div style={{ backgroundColor: 'white' }} className="ltn__product-item ltn__product-item-3 text-center">
+        <div className="product-img">
+            <a href="/Lab_details" className="zoomable">
+                <img src="img/photos/l4.jpg" alt="#" />
+            </a>
+            <div className="product-hover-action">
+                {/* Add your hover action buttons here */}
+            </div>
+        </div>
+        <div className="product-info">
+            <div className="product-ratting">
+               
+            </div>
+            <h2 className="product-title">
+                <a href="product-details.html">RIOTT INNOVATIONS</a>
+            </h2>
+            <div className="product-price">
+                <span>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: "8px" }} />
+                    <a> Kannur, koodali</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+            {/* <!--  --> */}
+          </div>
+        </div>
+
+        <div className="container">
+          {/*  */}
+          <div className="row ltn__tab-product-slider-one-active--- slick-arrow-1">
+            {/* <!-- ltn__product-item --> */}
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+    <div style={{ backgroundColor: 'white' }} className="ltn__product-item ltn__product-item-3 text-center">
+        <div className="product-img">
+            <a href="/Lab_details" className="zoomable">
+                <img src="img/photos/l5.webp" alt="#" />
+            </a>
+            <div className="product-hover-action">
+                {/* Add your hover action buttons here */}
+            </div>
+        </div>
+        <div className="product-info">
+            <div className="product-ratting">
+               
+            </div>
+            <h2 className="product-title">
+                <a href="product-details.html">LION LABS</a>
+            </h2>
+            <div className="product-price">
+                <span>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: "8px" }} />
+                    <a> Kannur, koodali</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+            {/* <!-- ltn__product-item --> */}
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+    <div style={{ backgroundColor: 'white' }} className="ltn__product-item ltn__product-item-3 text-center">
+        <div className="product-img">
+            <a href="/Lab_details" className="zoomable">
+                <img src="img/photos/l6.jpg" alt="#" />
+            </a>
+            <div className="product-hover-action">
+                {/* Add your hover action buttons here */}
+            </div>
+        </div>
+        <div className="product-info">
+            <div className="product-ratting">
+               
+            </div>
+            <h2 className="product-title">
+                <a href="product-details.html">HYATT LABS</a>
+            </h2>
+            <div className="product-price">
+                <span>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: "8px" }} />
+                    <a> Kannur, koodali</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+            {/* <!-- ltn__product-item --> */}
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+    <div style={{ backgroundColor: 'white' }} className="ltn__product-item ltn__product-item-3 text-center">
+        <div className="product-img">
+            <a href="/Lab_details" className="zoomable">
+                <img src="img/photos/l7.jpg" alt="#" />
+            </a>
+            <div className="product-hover-action">
+                {/* Add your hover action buttons here */}
+            </div>
+        </div>
+        <div className="product-info">
+            <div className="product-ratting">
+               
+            </div>
+            <h2 className="product-title">
+                <a href="product-details.html">NEETHI DIAGNOSTICS</a>
+            </h2>
+            <div className="product-price">
+                <span>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: "8px" }} />
+                    <a> Kannur, koodali</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+            {/* <!-- ltn__product-item --> */}
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+    <div style={{ backgroundColor: 'white' }} className="ltn__product-item ltn__product-item-3 text-center">
+        <div className="product-img">
+            <a href="/Lab_details" className="zoomable">
+                <img src="img/photos/l8.webp" alt="#" />
+            </a>
+            <div className="product-hover-action">
+                {/* Add your hover action buttons here */}
+            </div>
+        </div>
+        <div className="product-info">
+            <div className="product-ratting">
+               
+            </div>
+            <h2 className="product-title">
+                <a href="product-details.html">STELLAR LABS</a>
+            </h2>
+            <div className="product-price">
+                <span>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: "8px" }} />
+                    <a> Kannur, koodali</a>
+                </span>
+            </div>
+        </div> 
+    </div>
+</div>
+
+            {/* <!--  --> */}
+          </div>
+        </div>
       </div>
-    </CCardBody>
-  </CCard>
-    </CCol>
-    <CCol md={4}>
-      <CCard className="mb-3" style={{ overflow: 'hidden' }}>
-        <CCardImage className="zoom-in-effect"
-          src={l7} 
-          style={{
-           
-            transition: 'transform 0.3s ease-in-out',
-            ':hover': {
-              transform: 'scale(1.1)'
-            }
-          }}
-        />
-        <CCardBody >
-          <CCardTitle 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '0.5s',
-              opacity: 0,
-               fontWeight:'bold',
-               marginTop:'3%',
-            }}
-          >
-            RIOTT INNOVATIONS
-          </CCardTitle>
-          <CCardText 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '1s',
-              opacity: 0,
-              fontWeight:'bold'
-            }}
-          >
-           This can involve various diagnostic tests, such as imaging tests (e.g., X-rays, MRI, CT scans), blood tests, and biopsy procedures.
-          </CCardText>
-          <CCardText 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '1.5s',
-              opacity: 0,
-              fontWeight:'bold',
-              
-            }}
-          >
-           <small className="text-body-secondary">KANNUR, KOODALI</small>
-      </CCardText>
-      <div style={{
-        animation: 'fadeInUp 1s forwards',
-        animationDelay: '2s',
-        opacity: 0,
-        marginTop: '10px'
-      }}>
-       <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-      </div>
-    </CCardBody>
-      </CCard>
-    </CCol>
-    <CCol md={4}>
-      <CCard className="mb-3" style={{ overflow: 'hidden' }}>
-        <CCardImage className="zoom-in-effect"
-          src={l8} 
-          style={{
-            transition: 'transform 0.3s ease-in-out',
-            ':hover': {
-              transform: 'scale(1.1)'
-            }
-          }}
-        />
-        <CCardBody>
-          <CCardTitle 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '0.5s',
-              opacity: 0,
-              fontWeight:'bold',
-              marginTop:'3%',
-            }}
-          >
-           STELLAR LABS
-          </CCardTitle>
-          <CCardText 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '1s',
-              opacity: 0,
-              fontWeight:'bold'
-            }}
-          >
-            This can involve various diagnostic tests, such as imaging tests (e.g., X-rays, MRI, CT scans), blood tests, and biopsy procedures.
-          </CCardText>
-          <CCardText 
-            style={{
-              animation: 'fadeInUp 1s forwards',
-              animationDelay: '1.5s',
-              opacity: 0,
-              fontWeight:'bold'
-            }}
-          >
-            <small className="text-body-secondary">KANNUR, KOODALI</small>
-      </CCardText>
-      <div style={{
-        animation: 'fadeInUp 1s forwards',
-        animationDelay: '2s',
-        opacity: 0,
-        marginTop: '10px'
-      }}>
-       <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-        <FontAwesomeIcon icon={faStar} style={{ color: '#0a9a73' }} />
-      </div>
-    </CCardBody>
-      </CCard>
-    </CCol>
-    <div class="ltn__pagination-area text-center"style={{marginTop:'5%',marginBottom:'5%'}}>
+    <div class="ltn__pagination-area text-center"style={{marginTop:'5%',marginBottom:'5%',marginRight:'25px'}}>
                          <div class="ltn__pagination">
                             <ul>
                                 <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                <li><a href="#">1</a></li>
-                                <li class="active"><a href="#">2</a></li>
+                                
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
                                <li><a href="#">3</a></li>
                                <li><a href="#">...</a></li>
                                <li><a href="#">10</a></li>
@@ -408,8 +295,8 @@ const Lab = () => {
                       </div>
                    </div>
    
-  </CRow>
-  <h1 style={{textAlign:'center',fontFamily:'inherit',fontWeight:'bold',marginBottom:'5%', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>DLABS</h1>
+ 
+  <h1 style={{textAlign:'center',fontFamily:'inherit',fontWeight:'bold',marginBottom:'5%', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', fontSize: '50px'}}>DLABS</h1>
   <div className="container d-flex">
   
     <Row>
@@ -420,32 +307,19 @@ const Lab = () => {
       </Col>
       </Row>
       <div>
-      <p className="text"style={{color:'black',marginLeft:'25px',fontWeight:'bold'}}>
-        porem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet lacinia tortor. Donec ultricies sapien ut auctor vestibulum.
-        Proin pretium, nibh ut consequat dictum, libero eros fermentum libero, eu consequat lectus felis nec sapien. Integer non sem at lorem
-        consequat vulputate. Morbi efficitur, nisi at vehicula scelerisque, mi purus hendrerit dolor, ut cursus arcu dui eget magna. Nulla
-        facilisi. Quisque ut scelerisque sapien. Integer tristique, magna ac volutpat scelerisque, arcu sapien malesuada metus, sit amet
-        condimentum magna urna nec orci. Cras sed vehicula velit. Sed eget tortor ac sapien varius eleifend.Morbi efficitur, nisi at vehicula scelerisque, mi purus hendrerit dolor, ut cursus arcu dui eget magna. Nulla
-        facilisi. Quisque ut scelerisque sapien. Integer tristique, magna ac volutpat scelerisque, arcu sapien malesuada metus, sit amet
-        condimentum magna urna nec orci. Cras sed vehicula velit. Sed eget tortor ac sapien varius eleifend.Integer tristique, magna ac volutpat scelerisque, arcu sapien malesuada metus, sit amet
-        condimentum magna urna nec orci. Cras sed vehicula velit. Sed eget tortor ac sapien varius eleifend.condimentum magna urna nec orci. Cras sed vehicula velit. Sed eget tortor ac sapien varius eleifend.
+      <p className="text"style={{color:'black',marginLeft:'25px',fontSize:'18px',fontFamily:'inherit'}}>
+      Robust central lab services that offer an integrated, flexible, one-stop solution for the collection, management and analysis of lab and study data in the clinical trial ecosystem.
+      Clinical trial sponsors want accurate, reliable and fast data to successfully manage their clinical trials. It’s critical to engage a central lab that ensures consistent test methodologies, equipment and reporting standards, which drives standardization, accuracy and reliability of data across multiple study sites. Our global central lab helps enable informed decision-making, drive site excellence and address challenges that drug developers face. Through our award-winning drug development database solution, globally standardized clinical testing and centralized data visibility, our team helps customers make more informed decisions about their clinical trials.When working with a large amount of lab data, powerful digital tools that provide data integration in real time allow for insights to help inform clinical decisions. But finding a lab service provider with the required expertise can be a challenge. Our award-winning Preclarus Lab solutions centralize and integrate data across labs to guide, accelerate and advance our customers’ development efforts.
       </p>
       </div>
     </div>
     <div className="container d-flex">
-    <p style={{color:'black',fontWeight:'bold'}}>
-        porem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet lacinia tortor. Donec ultricies sapien ut auctor vestibulum.
-        Proin pretium, nibh ut consequat dictum, libero eros fermentum libero, eu consequat lectus felis nec sapien. Integer non sem at lorem
-        consequat vulputate. Morbi efficitur, nisi at vehicula scelerisque, mi purus hendrerit dolor, ut cursus arcu dui eget magna. Nulla
-        facilisi. Quisque ut scelerisque sapien. Integer tristique, magna ac volutpat scelerisque, arcu sapien malesuada metus, sit amet
-        condimentum magna urna nec orci. Cras sed vehicula velit. Sed eget tortor ac sapien varius eleifend.Morbi efficitur, nisi at vehicula scelerisque, mi purus hendrerit dolor, ut cursus arcu dui eget magna. Nulla
-        facilisi. Quisque ut scelerisque sapien. Integer tristique, magna ac volutpat scelerisque, arcu sapien malesuada metus, sit amet
-        condimentum magna urna nec orci. Cras sed vehicula velit. Sed eget tortor ac sapien varius eleifend.Integer tristique, magna ac volutpat scelerisque, arcu sapien malesuada metus, sit amet
-        condimentum magna urna nec orci. Cras sed vehicula velit. Sed eget tortor ac sapien varius eleifend.condimentum magna urna nec orci. Cras sed vehicula velit. Sed eget tortor ac sapien varius eleifend.
+    <p style={{color:'black',fontSize:'18px',fontFamily:'inherit'}}>
+    We are dedicated to helping customers make faster, more informed decisions about their clinical trials through our award-winning drug development database solution, globally standardized clinical testing and centralized data visibility. Our central lab provides an integrated, flexible, one-stop solution for the collection, management and analysis of lab and study data, and an enhanced clinical focus.Secure access for customer project teams to real-time, study-wide data including the ability to visualize, organize, search and manage lab data.
       </p>
       </div>
   
-</div>
+   </div>
 
 
 
